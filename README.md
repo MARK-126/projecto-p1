@@ -1,12 +1,3 @@
-
-```
-mongo
-├─ docker-compose.yml
-├─ package-lock.json
-├─ package.json
-└─ server.js
-
-```
 ```
 mongo
 ├─ .env
@@ -17,5 +8,6 @@ mongo
 ├─ package.json
 ├─ server.js
 └─ services.js
+
 
 ```
