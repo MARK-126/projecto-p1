@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Usuarios</h1>
+
+        <section class="usuarios-section">
+            <h2>Lista de Usuarios</h2>
+            <div id="usuarios-lista" class="usuarios-lista">
+                <p class="loading">Cargando usuarios...</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2 id="form-title">Crear Nuevo Usuario</h2>
+            <form id="usuario-form">
+                <input type="hidden" id="usuario-id">
+
+                <div class="form-group">
+                    <label for="first_name">Nombre *</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Nombre del usuario" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="las_name">Apellido *</label>
+                    <input type="text" id="las_name" name="las_name" placeholder="Apellido del usuario" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dni">DNI *</label>
+                    <input type="text" id="dni" name="dni" placeholder="12345678" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Crear Usuario</button>
+                    <button type="button" class="btn btn-secondary" id="cancel-btn" style="display: none;">Cancelar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="../scripts/app.js"></script>
+</body>
+</html>
