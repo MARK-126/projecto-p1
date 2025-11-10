@@ -1,10 +1,11 @@
 {
-  "name": "mongo",
+  "name": "api-rest-projecto",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "src/apps/backend/server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node --watch src/apps/backend/server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "mongodb": "^6.20.0"
+    "mysql2": "^3.15.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.37.0",
