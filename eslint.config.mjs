@@ -4,7 +4,21 @@ import tseslint from "typescript-eslint";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig([
-  { files: ["**/*.{js,mjs,cjs,ts,mts,cts}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.node } },
-  { files: ["**/*.js"], languageOptions: { sourceType: "module" } },
+  {
+    files: ["src/apps/backend/**/*.{js,mjs,cjs}"],
+    plugins: { js },
+    extends: ["js/recommended"],
+    languageOptions: {
+      globals: globals.node,
+      sourceType: "module"
+    }
+  },
+  {
+    files: ["src/apps/frontend/**/*.js"],
+    languageOptions: {
+      globals: globals.browser,
+      sourceType: "script"
+    }
+  },
   tseslint.configs.recommended,
 ]);
